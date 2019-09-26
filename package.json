@@ -2,15 +2,15 @@
   "name": "gitbook-plugin-head-append",
   "repository": {
     "type": "git",
-    "url": "https://github.com/azu/gitbook-plugin-head-append.git"
+    "url": "https://github.com/noriste/gitbook-plugin-head-append.git"
   },
   "author": "NoriSte &lt;nori.ste.magni@gmail.com&gt;",
-  "homepage": "https://github.com/azu/gitbook-plugin-head-append",
+  "homepage": "https://github.com/noriste/gitbook-plugin-head-append",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azu/gitbook-plugin-head-append/issues"
+    "url": "https://github.com/noriste/gitbook-plugin-head-append/issues"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Append code to the <head> of the page",
   "engines": {
     "gitbook": "*"
