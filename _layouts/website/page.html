@@ -1,6 +1,4 @@
-{% extends template.self %}
-
-{% block head %}
-    {{ super() }}
-    <link rel="canonical" href="{{ config.pluginsConfig['canonical-link'].baseURL }}/{{ file.path | replace(config.structure['readme'],'') | replace('index.html.md','') | replace('README.md','') | replace('readme.md','') | replace('.md','.html') | replace('.adoc','.html')}}">
+{% extends template.self %} {% block head %}
+{{ super() }}
+{{ config.pluginsConfig["header-append"].code.join("\n") }}
 {% endblock %}
