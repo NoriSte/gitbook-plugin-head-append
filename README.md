@@ -15,7 +15,7 @@ I started from the [gitbook-plugin-canonical-link](https://github.com/azu/gitboo
 
 add to `book.json`
 
-```
+```json
 {
   "plugins": [
     "head-append"
@@ -35,3 +35,4 @@ add to `book.json`
     }
 }
 ```
+You can see it in action in the [reactjsday-2019-testing-course book](https://noriste.github.io/reactjsday-2019-testing-course/).
