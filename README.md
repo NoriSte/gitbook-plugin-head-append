@@ -41,18 +41,17 @@ If you want to add a script you must replace every `script` occurrence with `SCR
 
 ```json
 "head-append": {
-    "code": [
-      "<!-- Global site tag (gtag.js) - Google Analytics -->",
-      "<SCRIPTTAG async src=\"https://www.googletagmanager.com/gtag/js?id=UA-142637808-2\"></SCRIPTTAG>",
-      "<SCRIPTTAG>",
-      "  window.dataLayer = window.dataLayer || [];",
-      "  function gtag(){dataLayer.push(arguments);}",
-      "  gtag('js', new Date());",
-      "",
-      "  gtag('config', 'XXX', { 'anonymize_ip': true });",
-      "</SCRIPTTAG>"
-    ]
-  }
+  "code": [
+    "<!-- Global site tag (gtag.js) - Google Analytics -->",
+    "<SCRIPTTAG async src=\"https://www.googletagmanager.com/gtag/js?id=UA-142637808-2\"></SCRIPTTAG>",
+    "<SCRIPTTAG>",
+    "  window.dataLayer = window.dataLayer || [];",
+    "  function gtag(){dataLayer.push(arguments);}",
+    "  gtag('js', new Date());",
+    "",
+    "  gtag('config', 'XXX', { 'anonymize_ip': true });",
+    "</SCRIPTTAG>"
+  ]
 }
 ```
 
