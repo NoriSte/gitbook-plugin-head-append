@@ -13,7 +13,7 @@ I started from the [gitbook-plugin-canonical-link](https://github.com/azu/gitboo
 
 ## Usage
 
-add to `book.json`
+Add to `book.json`
 
 ```json
 {
@@ -33,6 +33,29 @@ add to `book.json`
         "<meta name=\"theme-color\" content=\"#50ade5\">"
       ]
     }
+  }
 }
 ```
+
+If you want to add a script you must replace every `script` occurrence with `SCRIPTTAG`, the plugin will restore it.
+
+```json
+"head-append": {
+    "code": [
+      "<!-- Global site tag (gtag.js) - Google Analytics -->",
+      "<SCRIPTTAG async src=\"https://www.googletagmanager.com/gtag/js?id=UA-142637808-2\"></SCRIPTTAG>",
+      "<SCRIPTTAG>",
+      "  window.dataLayer = window.dataLayer || [];",
+      "  function gtag(){dataLayer.push(arguments);}",
+      "  gtag('js', new Date());",
+      "",
+      "  gtag('config', 'XXX', { 'anonymize_ip': true });",
+      "</SCRIPTTAG>"
+    ]
+  }
+}
+```
+
+That's necessary to avoid the `Uncaught SyntaxError: Invalid or unexpected token` JavaScript error.
+
 You can see it in action in the [reactjsday-2019-testing-course book](https://noriste.github.io/reactjsday-2019-testing-course/).

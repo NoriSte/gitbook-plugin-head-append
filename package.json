@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/noriste/gitbook-plugin-head-append/issues"
   },
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Append code to the <head> of the page",
   "engines": {
     "gitbook": "*"
