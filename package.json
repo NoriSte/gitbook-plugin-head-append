@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/azu/gitbook-plugin-head-append/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Append code to the <head> of the page",
   "engines": {
     "gitbook": "*"

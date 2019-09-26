@@ -1,4 +1,4 @@
 {% extends template.self %} {% block head %}
 {{ super() }}
-{{ config.pluginsConfig["header-append"].code.join("\n") }}
+{{ config.pluginsConfig["head-append"].code.join("\n") }}
 {% endblock %}
